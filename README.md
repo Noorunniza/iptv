@@ -19,7 +19,7 @@ The system allows users to:
 
 ## 2. Problem Statement
 
-This project provides a simple IPTV experience with user-based personalization. 
+This project provides a simple IPTV experience with user-based personalization.
 
 Instead of storing channel data locally:
 - Channels are fetched from a remote M3U playlist.
@@ -85,21 +85,7 @@ Instead of storing channel data locally:
 
 ---
 
-## 6. Architecture
-
-```mermaid
-graph TD
-    A[React Native App] -->|Auth Requests| B[Express API]
-    B --> C[(MongoDB)]
-    A -->|Favorites Sync| B
-    A -->|Channel Fetch| D[Remote M3U URL]
-    B -->|Password Reset| E[Email/Nodemailer]
-    E -->|Click Link| A
-```
-
----
-
-## 7. Project Structure
+## 6. Project Structure
 
 ```text
 ReactNativeApps/
@@ -128,7 +114,7 @@ ReactNativeApps/
 
 ---
 
-## 8. Backend Configuration
+## 7. Backend Configuration
 
 1. Navigate to the backend directory:
    ```bash
@@ -142,7 +128,7 @@ ReactNativeApps/
 
 ---
 
-## 9. Frontend Setup
+## 8. Frontend Setup
 
 1. Navigate to the frontend directory:
    ```bash
@@ -168,7 +154,7 @@ ReactNativeApps/
 
 ---
 
-## 10. Running the Full Project
+## 9. Running the Full Project
 
 Open two separate terminals:
 
@@ -188,7 +174,7 @@ npm run android
 
 ---
 
-## 11. Important Notes
+## 10. Important Notes
 
 - **Network**: Replace `localhost` with your computer's local IP address when testing on real devices.
 - **Database**: Ensure MongoDB is running locally or provide a cloud URI.
@@ -197,7 +183,7 @@ npm run android
 
 ---
 
-## 12. Troubleshooting
+## 11. Troubleshooting
 
 ### Metro Cache Issues
 ```bash
